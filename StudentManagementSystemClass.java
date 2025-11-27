@@ -214,7 +214,7 @@ public class StudentManagementSystem
 
     private void sortStudentsByGrade()
     {
-        List<Student> sortedList = new ArrayList<>(students); \
+        List<Student> sortedList = new ArrayList<>(students);
         sortedList.sort(Comparator.comparingDouble(Student::calculateAverageGrade).reversed());
 
         System.out.println("\n--- Students Sorted by Average Grade (Descending) ---");
